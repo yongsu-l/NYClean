@@ -6,5 +6,5 @@ def takePhoto():
     cam = pygame.camera.Camera(pygame.camera.list_cameras()[0])
     cam.start()
     img = cam.get_image()
-    pygame.image.save(img, "trash.png")
+    pygame.image.save(img, "trash.jpg")
     pygame.camera.quit()
