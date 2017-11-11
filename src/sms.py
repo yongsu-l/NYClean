@@ -11,6 +11,6 @@ def sendSMS(location, phone_number):
 
     message = client.messages.create(
         to=phone_number, 
-        from_="+18445517078",
+        from_=twilio_num,
         body=location)
     print(message.sid)
