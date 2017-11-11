@@ -1,16 +1,16 @@
 from twilio.rest import Client
 from auth import *
 
-# Your Account SID from twilio.com/console
-account_sid = twilio_acc
-# Your Auth Token from twilio.com/console
-auth_token  = twilio_auth
+def sendSMS(location, phone_number):
+    # Your Account SID from twilio.com/console
+    account_sid = twilio_acc
+    # Your Auth Token from twilio.com/console
+    auth_token  = twilio_auth
 
-client = Client(account_sid, auth_token)
+    client = Client(account_sid, auth_token)
 
-message = client.messages.create(
-    to="+16463715825", 
-    from_="+18445517078",
-    body="Hello from Python!")
-
-print(message.sid)
+    message = client.messages.create(
+        to=phone_number, 
+        from_="+18445517078",
+        body=location)
+    print(message.sid)
