@@ -109,43 +109,30 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:core:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:tone-analyzer:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.ibm.mobilefirstplatform.clientsdk.android:analyticsapi:1.1.1@jar" level="project" />
     <orderEntry type="library" exported="" name="com.google.code.gson:gson:2.8.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="org.jetbrains:annotations-java5:15.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-v4-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:alchemy:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:discovery:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-core-ui-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:document-conversion:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.github.ibm-cloud-security:appid-clientsdk-android-1.1.2" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="org.apache.commons:commons-lang3:3.5@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:tradeoff-analytics:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:personality-insights:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-media-compat-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:visual-recognition:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okhttp3:okhttp-urlconnection:3.8.0@jar" level="project" />
+    <orderEntry type="library" exported="" name="com.android.support:support-annotations:23.1.1@jar" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okhttp3:logging-interceptor:3.8.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:speech-to-text:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-annotations:25.1.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okio:okio:1.13.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:conversation:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.squareup.okhttp:okhttp:2.7.4@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:language-translator:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-v4-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-fragment-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:java-sdk:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:customtabs-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="com.ibm.mobilefirstplatform.clientsdk.android:core:2.2.7@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:text-to-speech:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.squareup.okhttp3:okhttp:3.8.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:retrieve-and-rank:4.0.0@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-core-utils-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:animated-vector-drawable-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:appcompat-v7-25.1.0" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-compat-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:natural-language-classifier:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="com.ibm.watson.developer_cloud:natural-language-understanding:4.0.0@jar" level="project" />
     <orderEntry type="library" exported="" name="org.glassfish.jersey.bundles.repackaged:jersey-jsr166e:2.25.1@jar" level="project" />
-    <orderEntry type="library" exported="" name="com.android.support:support-vector-drawable-25.1.0" level="project" />
     <orderEntry type="library" exported="" name="android-android-23" level="project" />
     <orderEntry type="library" exported="" name="org.apache.http.legacy-android-23" level="project" />
   </component>
