@@ -5,7 +5,7 @@ from cv2 import *
 
 def initCamera():
     pygame.camera.init()
-    cam = pygame.camera.Camera(pygame.camera.list_cameras()[1]) #Using android camera therefore need the second camera
+    cam = pygame.camera.Camera(pygame.camera.list_cameras()[0]) #Using android camera therefore need the second camera
     cam.start()
     return cam
 
