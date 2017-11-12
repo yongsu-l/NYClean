@@ -11,5 +11,7 @@ def post_imageV2(classifier_name, file, api_key):
 
     with open(file, 'rb') as image:
 
-        return (json.dumps(visual_recognition.classify(images_file=image, 
-                classifier_ids=classifier_name, threshold=0.0),  indent=2))
+        data = (visual_recognition.classify(images_file=image, 
+                classifier_ids=classifier_name, threshold=0.0))
+
+        return data

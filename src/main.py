@@ -15,17 +15,22 @@ def main():
             """
             """
             score = 0
-            for _ in range(20):
+            for i in range(5):
                 takePhoto(cam, filename)
-                time.sleep(.5)
-                data = post_imageV2("TrashIdentifier_1448310972", filename, ibm_auth)
+                data = (post_imageV2("TrashIdentifier_1292278590", filename, ibm_auth))
+                print(data['images'][0]['classifiers'][0]['classes'][0]['score'])
                 score += (data['images'][0]['classifiers'][0]['classes'][0]['score'])
+            
+            score /= 5
+            print(score)
 
-            score /= 20
-
-            if score > 0.30:
+            if score > 0.20:
+                print("Is trash")
                 sendSMS("This is Brooklyn", "+16463715825")
                 time.sleep(2)
+
+            else:
+                print("Not trash")
 
     except KeyboardInterrupt:
         print("Quitting Application")

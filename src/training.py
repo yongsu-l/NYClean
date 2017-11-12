@@ -50,6 +50,6 @@ def trainWatson():
     with open(join(dirname(__file__), 'full.zip'), 'rb') as full, \
       open(join(dirname(__file__), 'empty.zip'), 'rb') as empty:
       
-      print(json.dumps(visual_recognition.create_classifier('TrashIdentifier', _positive_examples=full, negative_examples=empty), indent=2))
+      print(json.dumps(visual_recognition.create_classifier('TrashIdentifier', _positive_examples=full, negative_examples=empty)))
 
 trainWatson()
