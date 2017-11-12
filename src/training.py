@@ -46,12 +46,12 @@ def trainWatson():
             while confirmation != "yes":
                 confirmation = input("Read to proceed with full?: ")
 
-
-    visual_recognition = VisualRecognitionV3('2016-05-20', api_key=ibm_auth)
-
     with open(join(dirname(__file__), 'full.zip'), 'rb') as full, \
-      open(join(dirname(__file__), 'empty.zip'), 'rb') as empty:
+        open(join(dirname(__file__), 'empty.zip'), 'rb') as empty:
       
-      print(json.dumps(visual_recognition.create_classifier('TrashIdentifier', _positive_examples=full, negative_examples=empty)))
+        visual_recognition = VisualRecognitionV3('2016-05-20', api_key=ibm_auth)
+        with open('class.py', 'w') as outfile:
+            data = visual_recognition.create_classifier('TrashIdentifier', _positive_examples=full, negative_examples=empty)
+            json.dump(data, outfile, indent=2)
 
 trainWatson()

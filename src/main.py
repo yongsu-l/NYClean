@@ -1,14 +1,14 @@
+""" NYClean """
+
 import time
-import os
 from sms import sendSMS
 from camera import takePhoto
 from camera import initCamera
 from watson import post_imageV2
 from auth import ibm_auth
 
-filename = "trash.jpg"
-
 def main():
+    trash_filename = "trash.jpg"
     try:
         cam = initCamera()
         while True:
@@ -16,8 +16,8 @@ def main():
             """
             score = 0
             for i in range(5):
-                takePhoto(cam, filename)
-                data = (post_imageV2("TrashIdentifier_1455385164", filename, ibm_auth))
+                takePhoto(cam, trash_filename)
+                data = (post_imageV2("TrashIdentifier_968106762", trash_filename, ibm_auth))
                 print(data['images'][0]['classifiers'][0]['classes'][0]['score'])
                 score += (data['images'][0]['classifiers'][0]['classes'][0]['score'])
             
@@ -26,7 +26,7 @@ def main():
 
             if score > 0.20:
                 print("Is trash")
-                sendSMS("This is Brooklyn", "+16463715825")
+                sendSMS("Garbage can is full!!!!", "+16465411524")
                 time.sleep(2)
 
             else:
