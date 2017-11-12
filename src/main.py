@@ -17,7 +17,7 @@ def main():
             score = 0
             for i in range(5):
                 takePhoto(cam, filename)
-                data = (post_imageV2("TrashIdentifier_1292278590", filename, ibm_auth))
+                data = (post_imageV2("TrashIdentifier_1455385164", filename, ibm_auth))
                 print(data['images'][0]['classifiers'][0]['classes'][0]['score'])
                 score += (data['images'][0]['classifiers'][0]['classes'][0]['score'])
             

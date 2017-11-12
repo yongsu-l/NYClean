@@ -32,6 +32,8 @@ def trainWatson():
 
         for j in range(50):
             takePhoto(cam, names[i] + '/' + names[i] + str(j) + ".jpg")
+            print("CLICK")
+            time.sleep(.3)
 
 
         zipf = zipfile.ZipFile(names[i] + ".zip", 'w', zipfile.ZIP_DEFLATED)
