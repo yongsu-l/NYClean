@@ -13,15 +13,20 @@ def main():
         cam = initCamera()
         while True:
             """
-            sendSMS("This is Brooklyn", "+16463715825")
-            time.sleep(2)
             """
-            takePhoto(cam, filename)
-            time.sleep(.5)
-            if post_imageV2("TrashIdentifier_1448310972", filename, ibm_auth):
-                print("Empty the fking trash")
-            else:
-                print("Don't empty trash")
+            score = 0
+            for _ in range(20):
+                takePhoto(cam, filename)
+                time.sleep(.5)
+                data = post_imageV2("TrashIdentifier_1448310972", filename, ibm_auth)
+                score += (data['images'][0]['classifiers'][0]['classes'][0]['score'])
+
+            score /= 20
+
+            if score > 0.30:
+                sendSMS("This is Brooklyn", "+16463715825")
+                time.sleep(2)
+
     except KeyboardInterrupt:
         print("Quitting Application")
 
