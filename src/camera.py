@@ -1,10 +1,15 @@
 import pygame.camera
 import pygame.image
+import cv2
+import time
 
-def takePhoto():
+
+def initCamera():
     pygame.camera.init()
     cam = pygame.camera.Camera(pygame.camera.list_cameras()[0])
     cam.start()
+    return cam
+
+def takePhoto(cam, filename):
     img = cam.get_image()
-    pygame.image.save(img, "trash.jpg")
-    pygame.camera.quit()
+    pygame.image.save(img, filename)

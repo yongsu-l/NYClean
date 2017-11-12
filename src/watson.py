@@ -13,3 +13,9 @@ def post_imageV2(classifier_name, file, api_key):
 
         print(json.dumps(visual_recognition.classify(images_file=image, 
                 classifier_ids=classifier_name, threshold=0.0),  indent=2))
+        """
+        empty_score = data["images"]["classifiers"]["classes"][0]["score"]
+        full_score = data["images"]["classifiers"]["classes"][1]["score"]
+
+"""
+        return True
