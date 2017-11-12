@@ -1,8 +1,7 @@
 import pygame.camera
 import pygame.image
-import cv2
 import time
-
+from cv2 import *
 
 def initCamera():
     pygame.camera.init()
