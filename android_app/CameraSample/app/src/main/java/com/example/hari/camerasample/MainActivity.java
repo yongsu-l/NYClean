@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                  int count = params.length;
                  for (int i = 0; i < count; i++) {
 
-                     VisualRecognition service = new VisualRecognition(VisualRecognition.VERSION_DATE_2016_05_20,"36ead01e60f21adb8f427d311c023d5e55abced7");
+                     VisualRecognition service = new VisualRecognition(VisualRecognition.VERSION_DATE_2016_05_20,"apikey");
 
                      if (ContextCompat.checkSelfPermission(thisActivity,
                              Manifest.permission.READ_CONTACTS)
