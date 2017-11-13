@@ -1,4 +1,4 @@
-#NYClean
+# NYClean
 
 ## Inspiration
 Those who live in NYC can relate to the fact that NYC is the city of lights but also one of the dirtiest if not the dirtiest cities in America. Our developers live in different boroughs of New York, but share the common problem of walking by **overfilled garbage cans** that can easily tip over and spill if one more coffee cup is placed on top. This problem cause the streets to be extremely dirty and polluted, and it affects the lives of many New Yorkers.
