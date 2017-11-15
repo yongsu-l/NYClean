@@ -13,3 +13,5 @@ Make an auth.py file within your local computer, change the api keys for twilio 
 We planned to integrate this application with security cameras near trash bins throughout the city to execute this operation on a bigger scale.
 We also aim to implement the same platform on an android app so that users can take pictures of filled garbage cans and have those pictures send to our Trash Identifier. When the threshold that we set is met, we know that the trash is actually full, and it will trigger the Twilio API to alert 311. To give users a incentive to use the app, we have spoken to NYC public data representatives, and unlimited metro cards can be given out to users when they reported a certain amount of full trash cans.
 With this app, we hope NYC will become a cleaner and healthier city!
+
+## https://devpost.com/software/nyclean
